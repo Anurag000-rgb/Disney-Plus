@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { auth, provider } from '../firebase';
 import { selectUserName, selectUserPhoto, setSignOutState, setUserLoginDetails } from "../features/user/userSlice";
 
-const Header =(props) => {
+const Header = (props) => {
 
     const dispatch = useDispatch();
     const history = useHistory();
@@ -63,7 +63,7 @@ const Header =(props) => {
                 <Login onClick={handleAuth}>Login</Login> :
                 <>
                     <NavMenu>
-                        <a>
+                        <a href="home">
                         <img src='images/home-icon.svg' alt='/'/>
                         <span>HOME</span>
                         </a>
